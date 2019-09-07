@@ -1,13 +1,4 @@
-.box-container3 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 2px;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.progress {
+progress {
     margin: 10px;
 }
 
@@ -18,10 +9,32 @@
     text-align: center;
     width: 160px;
 }
+.services {
+    margin: 10px;
+    padding: 10px;
+    font-size: 21px;
+    z-index: 0;
+    box-shadow: 0px 0px 56px 10px rgba(0, 0, 0, 0.17);
+    border-bottom: 5px solid aquamarine
+}
 
-.box-container2.services {
-    margin: 20px;
-    font-size: 20px;
+.services1 {
+    margin: 5px;
+    padding: 15px;
+    font-size: 21px;
+    z-index: 0;
+    box-shadow: 0px 0px 56px 10px rgba(0, 0, 0, 0.17);
+    border-bottom: 5px solid aquamarine
+}
+
+.sourcerer {
+    margin: 5px;
+}
+
+.services2 {
+    margin: 10px;
+    padding: 25px;
+    font-size: 21px;
     z-index: 0;
     box-shadow: 0px 0px 56px 10px rgba(0, 0, 0, 0.17);
     border-bottom: 5px solid aquamarine
@@ -38,20 +51,18 @@
     box-shadow: 0px 0px 56px 10px rgba(0, 0, 0, 0.17);
     border-bottom: 5px solid aquamarine
 }
-/* .services {
-    animation: cssAnimation 0s 6s forwards;
-    opacity: 0; 
-}
-  
-@keyframes cssAnimation {
-    to   { opacity: 1; }
-} */
 
 .desc > h1 {
     letter-spacing: 3px;
     font-family: 'Archivo Black', sans-serif;
 }
 
+.desc {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
 .services .icon i {
     font-size: 30px;
     color: #fff;
@@ -65,9 +76,10 @@
     overflow: hidden;
     width: 300px;
     height: 300px;
+    
   }
   .octo, .octo div {
-    width: 270px;
+    width: 200px;
     height: 270px;
   }
   .octo {

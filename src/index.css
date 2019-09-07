@@ -39,7 +39,6 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 2px;
     align-items: center; 
     text-align: center;
     background-color: white;
@@ -96,6 +95,9 @@ button:hover{
         width: 100%;
     }
   
+    .box-container2 {
+        flex-flow: row wrap;
+    }
     .smooth:hover{
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
