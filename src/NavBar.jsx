@@ -3,6 +3,7 @@ import logo from './sd3.png'
 
 class NavBar extends React.Component {
     render() {
+        const {onRouteChange} = this.props
         return (
             <div className="box-container1">
                 <img src={logo} alt="mylogo" style={{width:90, margin:10}}/>
@@ -26,8 +27,8 @@ class NavBar extends React.Component {
                     </div>
                 </div>
                 <div className="buttContainer">
-                    <button className="smooth">Welcome</button>
-                    <button className="smooth">my Stack</button>
+                    <button className="smooth" onClick={()=>onRouteChange('welcome')}>Welcome</button>
+                    <button className="smooth" onClick={()=>onRouteChange('about')}>my Stack</button>
                     <button className="smooth">Selected Projects</button>
                     <button className="smooth">Blog & Vblog - Coming Soon</button>
                 </div>

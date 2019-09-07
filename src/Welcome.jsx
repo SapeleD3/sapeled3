@@ -6,9 +6,9 @@ class Welcome extends React.Component {
         return (
             <div className="box-container2">
                 <div className="services">
-                    <div class="part">
-                        <div class="octo">
-                            <div class="octo1">
+                    <div className="part">
+                        <div className="octo">
+                            <div className="octo1">
                                 <img src={mine} alt="face" width="300" height="456" />
                             </div>
                         </div>
