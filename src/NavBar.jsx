@@ -7,7 +7,7 @@ class NavBar extends React.Component {
         return (
             <div className="box-container1">
                 <img src={logo} alt="mylogo" style={{width:90, margin:10}}/>
-                <div className="cmd">
+                { this.props.cmd === 'welcome' ? <div className="cmd">
                     <div className="execBar">
                         <div className="min"></div>
                         <div className="max"></div>
@@ -25,7 +25,26 @@ class NavBar extends React.Component {
                             <h1>WELCOME TO MY WEBSITE</h1>
                         </div>
                     </div>
-                </div>
+                </div> : <div className="cmd">
+                    <div className="execBar">
+                        <div className="min"></div>
+                        <div className="max"></div>
+                        <div className="exit"></div>
+                    </div>
+                    <div className="content">
+                        <p>Moses Website [Version 1.0]</p>
+                        <p>(c) 2019 moSite. All right reserved</p>
+                        <div className="show">
+                            <p className="anim">C:\SAPELED3.DEV> </p>
+                            <p className="line2 anim-typewriter"> node About me</p>
+                        </div>
+                        <div className="intro">
+                            <h1>some technologies</h1>
+                            <h1>i have an understanding on</h1>
+                        </div>
+                    </div>
+        </div> }
+                
                 <div className="buttContainer">
                     <button className="smooth" onClick={()=>onRouteChange('welcome')}>Welcome</button>
                     <button className="smooth" onClick={()=>onRouteChange('about')}>my Stack</button>

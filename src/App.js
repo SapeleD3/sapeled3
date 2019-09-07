@@ -27,7 +27,7 @@ class App extends React.Component {
     return(
         <div className='box-container'>
           <div className="box box1">
-            <NavBar onRouteChange={this.onRouteChange}/>
+            <NavBar onRouteChange={this.onRouteChange} cmd={this.state.route}/>
           </div>
           <div className="box box2">
             {this.state.route === 'welcome' ? 
